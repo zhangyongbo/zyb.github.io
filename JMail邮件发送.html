@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	JMail邮件发送 - Z先生的乱语
+  	
+	</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Z先生的乱语" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	.share-comment{ padding: 25px 0px; clear: both;}
+	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
+	</style>
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+				 
+					
+					<h1><a href="index.html">Z先生的乱语</a></h1>
+					<p class="subtitle">这是一个程序猿的乱语</p>
+					<nav id="main-nav">
+						<ul class="main">
+						
+						  <li id=""><a target="self" href="index.html">Home</a></li>
+						
+						  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+						
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+
+
+
+
+
+
+
+
+
+<a target="_blank" class="github" target="_blank" href="https://zhangyongbo.github.io/" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:china.zhangyongbo@gmail.com" title="Email">Email</a>
+
+								
+
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">JMail邮件发送</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<span id="more"></span><!-- more -->
+
+<pre><code class="language-java">import org.apache.commons.lang3.StringUtils;
+
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
+import javax.mail.*;
+import javax.mail.internet.*;
+import java.io.FileOutputStream;
+import java.util.*;
+
+/**
+ * @auther: 张勇波
+ * @date: 2019-05-10 16:40
+ * @description: smtp邮件发送工具类
+ */
+public class SendEmailSMTP {
+    /**
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
+        String[] fromEmail = {&quot;***@yeah.net&quot;, &quot;yeah的昵称&quot;};
+        String fromEmailPWD = &quot;***&quot;;
+        Map&lt;String, String&gt; toEmail = new HashMap&lt;&gt;();
+        toEmail.put(&quot;***@foxmail.com&quot;, &quot;foxmail昵称&quot;);
+        Map&lt;String, String&gt; ccEmail = new HashMap&lt;&gt;();
+        ccEmail.put(&quot;***@bis.com.cn&quot;, &quot;bis昵称&quot;);
+        String subject = &quot;带附件和带图片的的邮件4&quot;;
+        String content = &quot;这是测试邮件发送&lt;br/&gt;&lt;img src=&#39;cid:Desert.jpg&#39;&gt;这是测试啊&lt;br/&gt;&lt;img src=&#39;cid:test.jpg&#39;&gt;&quot;;
+        List&lt;String&gt; partList = new ArrayList&lt;&gt;();
+        partList.add(&quot;D:\\测试附件.zip&quot;);
+        partList.add(&quot;D:\\测试附件2asda.xlsx&quot;);
+        Map&lt;String, String&gt; picMap = new HashMap&lt;&gt;();
+        picMap.put(&quot;D:\\Desert.jpg&quot;, &quot;Desert.jpg&quot;);
+        picMap.put(&quot;D:\\测试图片.jpg&quot;, &quot;test.jpg&quot;);
+        String savePath = &quot;D:\\&quot;;
+        String host = &quot;smtp.yeah.net&quot;;
+        String port = &quot;25&quot;;
+        sendMixedMail(host, port, fromEmail, fromEmailPWD, toEmail, ccEmail, null, subject, content, partList, picMap, savePath);
+//        sendMixedMail(host, port, fromEmail, fromEmailPWD, toEmail, subject, content, null, null, null);
+    }
+
+    /**
+     * 发送邮件
+     *
+     * @param host      smtp地址mail.smtp.host
+     * @param port      smtp端口mail.smtp.port
+     * @param fromEmail 发送地址，第一个值为发送邮箱地址，第二个值为昵称,没有昵称的设置为地址
+     * @param fromEmail 发送邮箱的pwd
+     * @param toEmail   接收地址集合（支持批量发送，key为地址，value为昵称,没有昵称的设置为地址）
+     * @param ccEmail   抄送地址集合（支持批量发送，key为地址，value为昵称,没有昵称的设置为地址）没有设置为null
+     * @param bccEmail  密送地址集合（支持批量发送，key为地址，value为昵称,没有昵称的设置为地址）没有设置为null
+     * @param subject   主题
+     * @param content   正文html格式 正文内的图片添加格式为&lt;img src=&#39;cid:Desert.jpg&#39;&gt; cid为图片的唯一标识
+     * @param partList  附件集合。 如不需要设置为null即可
+     * @param picMap    图片集合，地址为key ;value是邮件中使用该图片的cid，不能为中文 。如不需要设置为null即可
+     * @param savePath  生成邮件物理保存地址，将会以邮件subject+时间命名。如不需要设置为null即可
+     * @throws Exception
+     */
+    public static void sendMixedMail(String host, String port, String[] fromEmail, String fromEmailPWD, Map&lt;String, String&gt; toEmail, Map&lt;String, String&gt; ccEmail, Map&lt;String, String&gt; bccEmail, String subject, String content, List&lt;String&gt; partList, Map&lt;String, String&gt; picMap, String savePath) throws Exception {
+        Properties prop = new Properties();
+        prop.setProperty(&quot;mail.smtp.host&quot;, host);
+        prop.setProperty(&quot;mail.transport.protocol&quot;, &quot;smtp&quot;);
+        prop.setProperty(&quot;mail.smtp.port&quot;, port);
+        prop.setProperty(&quot;mail.smtp.auth&quot;, &quot;true&quot;);
+        Session session = Session.getInstance(prop, new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(fromEmail[0], fromEmailPWD);
+            }
+        });
+//        session.setDebug(true);
+        //创建邮件
+        MimeMessage message = new MimeMessage(session);
+        //设置邮件的基本信息
+        message.setFrom(new InternetAddress(fromEmail[0], fromEmail[1], &quot;UTF-8&quot;));
+        if (toEmail != null &amp;&amp; toEmail.size() &gt; 0) {
+            //配置接收邮件的地址
+            Address[] addr = new Address[toEmail.size()];
+            int i = 0;
+            for (Map.Entry&lt;String, String&gt; stringStringEntry : toEmail.entrySet()) {
+                addr[i] = new InternetAddress(stringStringEntry.getKey(), stringStringEntry.getValue(), &quot;UTF-8&quot;);
+                i++;
+            }
+            message.setRecipients(Message.RecipientType.TO, addr);
+            //处理抄送
+            if (ccEmail != null &amp;&amp; ccEmail.size() &gt; 0) {
+                int j = 0;
+                Address[] addr2 = new Address[ccEmail.size()];
+                for (Map.Entry&lt;String, String&gt; stringStringEntry : ccEmail.entrySet()) {
+                    addr2[j] = new InternetAddress(stringStringEntry.getKey(), stringStringEntry.getValue(), &quot;UTF-8&quot;);
+                    j++;
+                }
+                message.setRecipients(Message.RecipientType.CC, addr2);
+            }
+            //处理密送
+            if (bccEmail != null &amp;&amp; bccEmail.size() &gt; 0) {
+                int j = 0;
+                Address[] addr2 = new Address[bccEmail.size()];
+                for (Map.Entry&lt;String, String&gt; stringStringEntry : bccEmail.entrySet()) {
+                    addr2[j] = new InternetAddress(stringStringEntry.getKey(), stringStringEntry.getValue(), &quot;UTF-8&quot;);
+                    j++;
+                }
+                message.setRecipients(Message.RecipientType.BCC, addr2);
+            }
+            message.setSubject(subject);
+            //描述关系:正文和附件
+            MimeMultipart mp = new MimeMultipart();
+            //描述关系:正文和图片
+            MimeMultipart mp1 = new MimeMultipart();
+            //正文
+            MimeBodyPart text = new MimeBodyPart();
+            text.setContent(content, &quot;text/html;charset=UTF-8&quot;);
+            mp1.addBodyPart(text);
+            if (picMap != null &amp;&amp; picMap.size() &gt; 0)
+                //图片处理
+                for (Map.Entry&lt;String, String&gt; entry : picMap.entrySet()) {
+                    MimeBodyPart image = new MimeBodyPart();
+                    image.setDataHandler(new DataHandler(new FileDataSource(entry.getKey())));
+                    image.setContentID(entry.getValue());
+                    mp1.addBodyPart(image);
+                }
+            mp1.setSubType(&quot;related&quot;);//mixed 混合; related 关联; alternative 交替
+            if (partList != null &amp;&amp; partList.size() &gt; 0)
+                //处理附件
+                for (String s : partList) {
+                    MimeBodyPart attach = new MimeBodyPart();
+                    DataHandler dh = new DataHandler(new FileDataSource(s));
+                    attach.setDataHandler(dh);
+                    attach.setFileName(MimeUtility.encodeText(dh.getName()));
+                    mp.addBodyPart(attach);
+                }
+            MimeBodyPart contents = new MimeBodyPart();
+            contents.setContent(mp1);
+            mp.addBodyPart(contents);
+            mp.setSubType(&quot;mixed&quot;);
+            message.setContent(mp);
+            message.saveChanges();
+            if (StringUtils.isNotBlank(savePath))
+                //将创建好的邮件写入到磁盘以文件的形式进行保存
+                message.writeTo(new FileOutputStream(savePath + subject + IDUtil.getID() + &quot;.eml&quot;));
+            Transport.send(message);
+        } else {
+            System.out.println(&quot;--sendMixedMail--邮箱接收人不能为空&quot;);
+        }
+    }
+}
+
+</code></pre>
+
+		</div>
+	</article>
+	<div class="share-comment">
+	 
+
+	  
+
+	  
+
+	</div>
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+  
+    
+
+
+
+</body>
+</html>
