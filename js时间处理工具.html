@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	js时间处理工具 - Z先生的乱语
+  	
+	</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Z先生的乱语" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	.share-comment{ padding: 25px 0px; clear: both;}
+	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
+	</style>
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+				 
+					
+					<h1><a href="index.html">Z先生的乱语</a></h1>
+					<p class="subtitle">这是一个程序猿的乱语</p>
+					<nav id="main-nav">
+						<ul class="main">
+						
+						  <li id=""><a target="self" href="index.html">Home</a></li>
+						
+						  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+						
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+
+
+
+
+
+
+
+
+
+<a target="_blank" class="github" target="_blank" href="https://zhangyongbo.github.io/" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:china.zhangyongbo@gmail.com" title="Email">Email</a>
+
+								
+
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">js时间处理工具</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<span id="more"></span><!-- more -->
+
+<pre><code class="language-javascript">/**
+ * 日期格式化
+ * yyyy/yy 年
+ * MM/M 月
+ * E 星期
+ * dd/d 日
+ * HH/H 小时
+ * mm/m 分钟
+ * ss/s 秒
+ * SS/S 毫秒
+ * 除年份、星期 外的配置项 单双位表示，小于10的值是否要前面补0，双位补0，单位不补
+ * @param formatStr 格式化字符串 默认为yyyy-MM-dd
+ * @returns {*}
+ */
+Date.prototype.Format = function (formatStr) {
+    var Week = [&#39;星期日&#39;, &#39;星期一&#39;, &#39;星期二&#39;, &#39;星期三&#39;, &#39;星期四&#39;, &#39;星期五&#39;, &#39;星期六&#39;];
+    formatStr = formatStr.replace(/yyyy/, this.getFullYear());
+    formatStr = formatStr.replace(/yy/, (this.getYear() % 100) &gt; 9 ? (this.getYear() % 100).toString() : &#39;0&#39; + (this.getYear() % 100));
+    formatStr = formatStr.replace(/MM/, this.getMonth() &gt; 9 ? this.getMonth().toString() : &#39;0&#39; + this.getMonth());
+    formatStr = formatStr.replace(/M/g, this.getMonth());
+    formatStr = formatStr.replace(/E/g, Week[this.getDay()]);
+    formatStr = formatStr.replace(/dd/, this.getDate() &gt; 9 ? this.getDate().toString() : &#39;0&#39; + this.getDate());
+    formatStr = formatStr.replace(/d/g, this.getDate());
+    formatStr = formatStr.replace(/HH/, this.getHours() &gt; 9 ? this.getHours().toString() : &#39;0&#39; + this.getHours());
+    formatStr = formatStr.replace(/H/g, this.getHours());
+    formatStr = formatStr.replace(/mm/, this.getMinutes() &gt; 9 ? this.getMinutes().toString() : &#39;0&#39; + this.getMinutes());
+    formatStr = formatStr.replace(/m/g, this.getMinutes());
+    formatStr = formatStr.replace(/ss/, this.getSeconds() &gt; 9 ? this.getSeconds().toString() : &#39;0&#39; + this.getSeconds());
+    formatStr = formatStr.replace(/s/g, this.getSeconds());
+    formatStr = formatStr.replace(/SS/, this.getMilliseconds() &gt; 9 ? this.getMilliseconds().toString() : &#39;0&#39; + this.getMilliseconds());
+    formatStr = formatStr.replace(/S/g, this.getMilliseconds());
+    return formatStr;
+}
+
+/**
+ * 获得某月的天数
+ * @param paraYear 年
+ * @param paraMonth 月
+ * @returns {number}
+ */
+function getMonthDays(paraYear, paraMonth) {
+    var monthStartDate = new Date(paraYear, paraMonth - 1, 1);
+    var monthEndDate = new Date(paraYear, paraMonth, 1);
+    var days = (monthEndDate - monthStartDate) / 86400000;//24 * 60 * 60 * 1000
+    return days;
+}
+
+/**
+ * 获得某月的结束日期
+ * @param paraYear 年
+ * @param paraMonth 月
+ * @returns {string} yyyy-MM-dd
+ */
+function getMonthEndDate(paraYear, paraMonth) {
+    var monthEndDate = new Date(paraYear, paraMonth - 1, getMonthDays(paraYear, paraMonth));
+    return monthEndDate.Format(&#39;yyyy-MM-dd&#39;);
+}
+
+/**
+ * 获取某年某周的开始日期
+ * @param paraYear 年
+ * @param weekIndex 周数
+ * @returns yyyy-MM-dd
+ */
+function getBeginDateOfWeek(paraYear, weekIndex) {
+    var firstDay = getFirstWeekBegDay(paraYear);
+    //7*24*3600000 是一星期的时间毫秒数,(JS中的日期精确到毫秒)
+    var time = (weekIndex - 1) * 604800000;//7 * 24 * 3600000
+    var beginDay = firstDay;
+    //为日期对象 date 重新设置成时间 time
+    beginDay.setTime(firstDay.valueOf() + time);
+    return beginDay.Format(&#39;yyyy-MM-dd&#39;);
+}
+
+
+/**
+ * 获取某年某周的结束日期
+ * @param paraYear 年
+ * @param weekIndex 周数
+ * @returns yyyy-MM-dd
+ */
+function getEndDateOfWeek(paraYear, weekIndex) {
+    var firstDay = getFirstWeekBegDay(paraYear);
+    //7*24*3600000 是一星期的时间毫秒数,(JS中的日期精确到毫秒)
+    var time = (weekIndex - 1) * 604800000;//7 * 24 * 3600000
+    var weekTime = 518400000;//6天的毫秒数 6 * 24 * 3600000
+    var endDay = firstDay;
+    //为日期对象 date 重新设置成时间 time
+    endDay.setTime(firstDay.valueOf() + weekTime + time);
+    return endDay.Format(&#39;yyyy-MM-dd&#39;);
+}
+
+/**
+ * 获取某年的第一天
+ * @param {*} year 年份
+ * @returns Date对象
+ */
+function getFirstWeekBegDay(year) {
+    var tempdate = new Date(year, 0, 1);
+    var temp = tempdate.getDay();
+    if (temp == 1) {
+        return tempdate;
+    }
+    temp = temp == 0 ? 7 : temp;
+    tempdate = tempdate.setDate(tempdate.getDate() + (8 - temp));
+    return new Date(tempdate);
+}
+/**
+ * 获取日期为某年的第几周
+ * @param date date对象
+ * @returns {number} 年周位数
+ */
+function getWeekIndex(date) {
+    var firstDay = getFirstWeekBegDay(date.getFullYear());
+    if (date &lt; firstDay) {
+        firstDay = getFirstWeekBegDay(date.getFullYear() - 1);
+    }
+    var d = Math.floor((date.valueOf() - firstDay.valueOf()) / 86400000);
+    return Math.floor(d / 7) + 1;
+}
+
+/**
+ * 获取2个日期之间的日期
+ * @param begin 开始 yyyy-MM-dd
+ * @param end 结束 yyyy-MM-dd
+ * @returns {Array} yyyy-MM-dd日期数组
+ */
+function getDayBetween(begin, end) {
+    var ab = begin.split(&quot;-&quot;);
+    var ae = end.split(&quot;-&quot;);
+    var db = new Date(ab[0], Number(ab[1]), Number(ab[2])).getTime();
+    var de = new Date(ae[0], Number(ae[1]), Number(ae[2])).getTime();
+    var result = [];
+    for (var k = db; k &lt;= de;) {
+        result.push(new Date(k).Format(&#39;yyyy-MM-dd&#39;));
+        k += 86400000;//24 * 60 * 60 * 1000
+    }
+    return result;
+}
+/**
+ * 数字转中文，0不做处理
+ * 数字字符转中文，而不是数字转换中文数字
+ * 2018 转换为 二0一八
+ * @param num
+ * @returns {string} 如：2018 转换为 二0一八
+ */
+function numberCharToChinese(num) {
+    var china = new Array(&#39;0&#39;, &#39;一&#39;, &#39;二&#39;, &#39;三&#39;, &#39;四&#39;, &#39;五&#39;, &#39;六&#39;, &#39;七&#39;, &#39;八&#39;, &#39;九&#39;);
+    var arr = &quot;&quot;;
+    var english = (Number(num) + &quot;&quot;).split(&quot;&quot;);
+    for (var i = 0; i &lt; english.length; i++) {
+        arr += china[english[i]];
+    }
+    return arr;
+}
+/**
+ * 数字转中文
+ * @number {Integer} 形如123的数字
+ * @return {String} 返回转换成的形如 一百二十三 的字符串
+ */
+function numberToChinese(number) {
+    var units = &#39;个十百千万@#%亿^&amp;~&#39;;
+    var chars = &#39;零一二三四五六七八九&#39;;
+    var a = (number + &#39;&#39;).split(&#39;&#39;),
+        s = [];
+    if (a.length &gt; 12) {
+        throw new Error(&#39;too big&#39;);
+    } else {
+        for (var i = 0, j = a.length - 1; i &lt;= j; i++) {
+            if (j == 1 || j == 5 || j == 9) { //两位数 处理特殊的 1*
+                if (i == 0) {
+                    if (a[i] != &#39;1&#39;) s.push(chars.charAt(a[i]));
+                } else {
+                    s.push(chars.charAt(a[i]));
+                }
+            } else {
+                s.push(chars.charAt(a[i]));
+            }
+            if (i != j) {
+                s.push(units.charAt(j - i));
+            }
+        }
+    }
+    return s.join(&#39;&#39;).replace(/零([十百千万亿@#%^&amp;~])/g, function (m, d, b) { //优先处理 零百 零千 等
+        b = units.indexOf(d);
+        if (b != -1) {
+            if (d == &#39;亿&#39;) return d;
+            if (d == &#39;万&#39;) return d;
+            if (a[j - b] == &#39;0&#39;) return &#39;零&#39;
+        }
+        return &#39;&#39;;
+    }).replace(/零+/g, &#39;零&#39;).replace(/零([万亿])/g, function (m, b) { // 零百 零千处理后 可能出现 零零相连的 再处理结尾为零的
+        return b;
+    }).replace(/亿[万千百]/g, &#39;亿&#39;).replace(/[零]$/, &#39;&#39;).replace(/[@#%^&amp;~]/g, function (m) {
+        return {
+            &#39;@&#39;: &#39;十&#39;,
+            &#39;#&#39;: &#39;百&#39;,
+            &#39;%&#39;: &#39;千&#39;,
+            &#39;^&#39;: &#39;十&#39;,
+            &#39;&amp;&#39;: &#39;百&#39;,
+            &#39;~&#39;: &#39;千&#39;
+        }[m];
+    }).replace(/([亿万])([一-九])/g, function (m, d, b, c) {
+        c = units.indexOf(d);
+        if (c != -1) {
+            if (a[j - c] == &#39;0&#39;) return d + &#39;零&#39; + b
+        }
+        return m;
+    });
+}
+
+/**
+ * 日期转中文，1-7 周一 - 周日
+ * @param weekType 类型 zhweek：星期，其它： 周
+ * @param val 周数 1-7（周一 - 周日）
+ * @returns {String} 星期一/周一
+ */
+function zhWeek(weekType, val) {
+    if (weekType == &#39;zhweek&#39;) {
+        weekType = &#39;星期&#39;;
+    } else {
+        weekType = &#39;周&#39;;
+    }
+    if (val == 7) {
+        return weekType + &quot;日&quot;;
+    } else {
+        return weekType + numberCharToChinese(val);
+    }
+}
+</code></pre>
+
+		</div>
+	</article>
+	<div class="share-comment">
+	 
+
+	  
+
+	  
+
+	</div>
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+  
+    
+
+
+
+</body>
+</html>
