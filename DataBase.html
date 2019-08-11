@@ -108,7 +108,7 @@
         
             <li><a href="DataBase.html">DataBase</a></li>
         
-            <li><a href="Middleware.html">中间件</a></li>
+            <li><a href="Middleware.html">Middleware</a></li>
         
             <li><a href="Other.html">Other</a></li>
          
@@ -140,43 +140,14 @@
                       
                       <div class="a-content-text">
                         
-                        	<p>使用root用户登录系统，并在/opt/目录下创建Java文件夹：</p>
-
-<pre class="line-numbers"><code class="language-shell">su - root
-cd /opt/
-mkdir Java
-chmod -R 775 /opt/Java
-</code></pre>
-
-<p>将下载的安装包解压到Java目录中：</p>
-
-<pre class="line-numbers"><code class="language-shell">cd Java
-tar -zxvf jdk-7u80-linux-x64.tar.gz
-</code></pre>
-
-<p>编辑/etc/profile文件，添加JDK环境变量配置信息：</p>
-
-<pre class="line-numbers"><code class="language-shell">vim /etc/profile
-export JAVA_HOME=/opt/Java/jdk1.7.0_80
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-export PATH=$PATH:$JAVA_HOME/bin
-export JRE_HOME=$JAVA_HOME/jre
-</code></pre>
-
-<p>执行重启命令或者刷新环境变量命令：</p>
-
-<pre class="line-numbers"><code class="language-shell">source /etc/profile
-或
-reboot
-</code></pre>
-
+                        	
                         
                       </div>
                   </div>
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                  
+                   <a href="RedHat%E5%AE%89%E8%A3%85JDK.html">Read more</a>&nbsp;&nbsp; 
                     <span class="date">2019/8/11</span>
                     <span>posted in&nbsp;</span> 
           				  
@@ -255,7 +226,7 @@ reboot
         
             <a href="DataBase.html"><strong>DataBase</strong></a>
         
-            <a href="Middleware.html"><strong>中间件</strong></a>
+            <a href="Middleware.html"><strong>Middleware</strong></a>
         
             <a href="Other.html"><strong>Other</strong></a>
          

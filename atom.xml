@@ -4,7 +4,7 @@
   <title><![CDATA[Z先生的乱语]]></title>
   <link href="https://zhangyongbo.github.io/atom.xml" rel="self"/>
   <link href="https://zhangyongbo.github.io/"/>
-  <updated>2019-08-11T14:42:20+08:00</updated>
+  <updated>2019-08-11T14:42:42+08:00</updated>
   <id>https://zhangyongbo.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -43,6 +43,8 @@
     <updated>2019-08-11T14:35:39+08:00</updated>
     <id>https://zhangyongbo.github.io/weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html</id>
     <content type="html"><![CDATA[
+<span id="more"></span><!-- more -->
+
 <p>weblogic.xml如下配置：</p>
 
 <pre class="line-numbers"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -96,6 +98,8 @@
     <updated>2019-08-11T14:34:20+08:00</updated>
     <id>https://zhangyongbo.github.io/RedHat%E5%AE%89%E8%A3%85JDK.html</id>
     <content type="html"><![CDATA[
+<span id="more"></span><!-- more -->
+
 <p>使用root用户登录系统，并在/opt/目录下创建Java文件夹：</p>
 
 <pre class="line-numbers"><code class="language-shell">su - root
