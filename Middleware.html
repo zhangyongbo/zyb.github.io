@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  ID生成工具类 - Z先生的乱语
+  中间件 - Z先生的乱语
   
   </title>
   
@@ -124,212 +124,108 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>ID生成工具类</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2019/8/10</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html">
+                
+                  <h1>weblogic集群session复制</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>weblogic.xml如下配置：</p>
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='Java.html'>Java</a></span>
-           
-         
-          <span class="comments">
-            
-              <a href="https://zhangyongbo.github.io/ID%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7%E7%B1%BB.html#disqus_thread">comments</a>
-            
+<pre class="line-numbers"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+  &lt;!DOCTYPE weblogic-web-app
+    PUBLIC &quot;-//BEA Systems, Inc.//DTD Web Application 8.1//EN&quot;
+    &quot;http://www.bea.com/servers/wls810/dtd/weblogic810-web-jar.dtd&quot; &gt;
+&lt;weblogic-web-app&gt;
+    &lt;jsp-descriptor&gt;
+        &lt;jsp-param&gt;
+            &lt;param-name&gt;keepgenerated&lt;/param-name&gt;
+            &lt;param-value&gt;true&lt;/param-value&gt;
+        &lt;/jsp-param&gt;
+    &lt;/jsp-descriptor&gt;
 
-            
-          </span>
-
-        </div>
-      </div><!-- article -->
-
-      <div class="article-content">
-      <span id="more"></span><!-- more -->
-
-<pre class="line-numbers"><code class="language-java">package com.util;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Random;
-
-/**
- * ID生成工具类
- * 提供2种ID
- * getID() 生成18位ID，生成ID格式为:yyMMdd+12位大小写字母+数字随机字符串
- * getLongID() 生成26位ID，生成ID格式为:yyyyMMddHHmmss+12位大小写字母+数字随机字符串
- * &lt;p&gt;
- * Created by zyb on 2016/8/18.
- */
-public class IDUtil {
-
-    @SuppressWarnings({ &quot;MethodCanBeVariableArityMethod&quot;, &quot;Annotation&quot; })
-    public static void main(String[] args) {
-        //System.out.println(IDUtil.getID());
-        //System.out.println(IDUtil.getLongID());
-    }
-
-    /**
-     * 生成18位ID，生成ID格式为:yyMMdd+12位大小写字母+数字随机字符串
-     *
-     * @return String
-     */
-    public synchronized static String getID() {
-        return getDate() + getRandomString(IDLENGTH);
-    }
-
-    /**
-     * 生成26位ID，生成ID格式为:yyyyMMddHHmmss+12位大小写字母+数字随机字符串
-     *
-     * @return String
-     */
-    public synchronized static String getLongID() {
-        return getDateTime() + getRandomString(IDLENGTH);
-    }
-
-    /**
-     * 生成随机字符串的长度
-     */
-    private final static int IDLENGTH = 10;
-
-    private static final char[] S_BASE64CHAR = { &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;, &#39;I&#39;, &#39;J&#39;, &#39;K&#39;, &#39;L&#39;, &#39;M&#39;, &#39;N&#39;,
-            &#39;O&#39;, &#39;P&#39;, &#39;Q&#39;, &#39;R&#39;, &#39;S&#39;, &#39;T&#39;, &#39;U&#39;, &#39;V&#39;, &#39;W&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;,
-            &#39;j&#39;, &#39;k&#39;, &#39;l&#39;, &#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;u&#39;, &#39;v&#39;, &#39;w&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;, &#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;,
-            &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;, &#39;+&#39;, &#39;/&#39; };
-
-    /**
-     * 随机产生指定长度的随机字符串
-     *
-     * @param length int 指定生成字符串的长度
-     * @return 随机字符串
-     */
-    private static String getRandomString(int length) {
-        String base = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&quot;;
-        Random random = new Random();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i &lt; length; i++) {
-            int number = random.nextInt(base.length());
-            sb.append(base.charAt(number));
-        }
-        sb.append(getTime());
-        return encode(sb.toString().getBytes(), 1, 9);
-
-    }
-
-    @SuppressWarnings({ &quot;SameParameterValue&quot;, &quot;Annotation&quot; })
-    private static String encode(byte[] data, int off, int len) {
-        if (len &lt;= 0) {
-            return &quot;&quot;;
-        }
-        char out[] = new char[(len / 3) * 4 + 4];
-        int rindex = off;
-        int windex = 0;
-        int rest;
-        for (rest = len; rest &gt;= 3; rest -= 3) {
-            int i = ((data[rindex] &amp; 0xff) &lt;&lt; 16) + ((data[rindex + 1] &amp; 0xff) &lt;&lt; 8) + (data[rindex + 2] &amp; 0xff);
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 18];
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 12 &amp; 0x3f];
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 6 &amp; 0x3f];
-            out[windex++] = S_BASE64CHAR[i &amp; 0x3f];
-            rindex += 3;
-        }
-        if (rest == 1) {
-            int i = data[rindex] &amp; 0xff;
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 2];
-            out[windex++] = S_BASE64CHAR[i &lt;&lt; 4 &amp; 0x3f];
-            out[windex++] = &#39;=&#39;;
-            out[windex++] = &#39;=&#39;;
-        } else if (rest == 2) {
-            int i = ((data[rindex] &amp; 0xff) &lt;&lt; 8) + (data[rindex + 1] &amp; 0xff);
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 10];
-            out[windex++] = S_BASE64CHAR[i &gt;&gt; 4 &amp; 0x3f];
-            out[windex++] = S_BASE64CHAR[i &lt;&lt; 2 &amp; 0x3f];
-            out[windex++] = &#39;=&#39;;
-        }
-        return new String(out, 0, windex);
-    }
-
-    /**
-     * 获取日期字符串，格式：20151027123026
-     *
-     * @return String
-     */
-    private static String getDateTime() {
-        SimpleDateFormat df = new SimpleDateFormat(&quot;yyyyMMddHHmmss&quot;);
-        return df.format(new Date());
-    }
-
-    /**
-     * 获取日期字符串，格式：151027
-     *
-     * @return String
-     */
-    private static String getDate() {
-        SimpleDateFormat df = new SimpleDateFormat(&quot;yyMMdd&quot;);
-        return df.format(new Date());
-    }
-
-    /**
-     * 获取时间字符串（时分秒），格式：153010
-     *
-     * @return 时间字符串（时分秒），格式：153010
-     */
-    private static String getTime() {
-        SimpleDateFormat df = new SimpleDateFormat(&quot;HHmmss&quot;);
-        return df.format(new Date());
-    }
-}
+    &lt;!-- 项目名 --&gt;
+    &lt;context-root&gt;slyy&lt;/context-root&gt;
+    &lt;container-descriptor&gt;
+        &lt;!-- 优先加载WEB-INF下classes --&gt;
+        &lt;prefer-web-inf-classes&gt;true&lt;/prefer-web-inf-classes&gt;
+    &lt;/container-descriptor&gt;
+    &lt;session-descriptor&gt;
+         &lt;debug-enabled&gt;true&lt;/debug-enabled&gt;
+        &lt;!-- &lt;persistent-store-type&gt;replicated&lt;/persistent-store-type&gt; --&gt;
+         &lt;persistent-store-type&gt;async-replicated-if-clustered&lt;/persistent-store-type&gt;
+         &lt;sharing-enabled&gt;true&lt;/sharing-enabled&gt;
+    &lt;/session-descriptor&gt;
+&lt;/weblogic-web-app&gt;
 </code></pre>
 
+<p>weblogic集群内要配置复制组，在console服务器菜单下，受管的server内集群标签下配置复制组。</p>
 
-    
+<p>Weblogic的session持久化策略是在weblogic.xml的persistent-store-type参数中 指定，缺省状态下为memory，共有如下所列9种选项：</p>
 
-      </div>
+<ul>
+<li>memory—不启用Session持久化.</li>
+<li>replicated—跟 memory一样, 但是session数据可以在集群服务器之间复制.</li>
+<li>replicated_if_clustered—如果Web应用时部署在一个集群服务器中，是replicated的，否则为memory</li>
+<li>async-replicated—异步的session复制</li>
+<li>async-replicated-if-clustered—如果是在集群环境中，启用replicated，否则启用in memory模式。</li>
+<li>async-jdbc—异步的基于jdbc的session持久化</li>
+<li>jdbc—使用数据库来进行session的持久化.</li>
+<li>cookie—所有的session数据存储在用户端的cookie中.</li>
+</ul>
 
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="JMail%E9%82%AE%E4%BB%B6%E5%8F%91%E9%80%81.html" 
-          title="Previous Post: JMail邮件发送">&laquo; JMail邮件发送</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="js%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7.html" 
-          title="Next Post: js时间处理工具">js时间处理工具 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2019/8/11</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Middleware.html'>中间件</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://zhangyongbo.github.io/weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html#disqus_thread">comments</a>
+                      
 
-          
-            <div id="disqus_thread"></div>
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
 
 
-
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

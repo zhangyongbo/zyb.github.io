@@ -105,6 +105,12 @@
             <li><a href="Java.html">Java</a></li>
         
             <li><a href="Web.html">Web</a></li>
+        
+            <li><a href="DataBase.html">DataBase</a></li>
+        
+            <li><a href="Middleware.html">中间件</a></li>
+        
+            <li><a href="Other.html">Other</a></li>
          
 
       </ul>
@@ -126,6 +132,182 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="15655055338215.html">
+                
+                  <h1>企业常用资产利率换算</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>总资产周转率、资产负债率、销售净利率、资产净利率、净资产利润率、劳动生产率(人均营业收入)、人均利润率（万元/人）、营业收入增长率（%）、固定资产增长率（%）、净利润增长率（%）</p>
+
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15655055338215.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2019/8/11</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Other.html'>Other</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://zhangyongbo.github.io/15655055338215.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html">
+                
+                  <h1>weblogic集群session复制</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>weblogic.xml如下配置：</p>
+
+<pre class="line-numbers"><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+  &lt;!DOCTYPE weblogic-web-app
+    PUBLIC &quot;-//BEA Systems, Inc.//DTD Web Application 8.1//EN&quot;
+    &quot;http://www.bea.com/servers/wls810/dtd/weblogic810-web-jar.dtd&quot; &gt;
+&lt;weblogic-web-app&gt;
+    &lt;jsp-descriptor&gt;
+        &lt;jsp-param&gt;
+            &lt;param-name&gt;keepgenerated&lt;/param-name&gt;
+            &lt;param-value&gt;true&lt;/param-value&gt;
+        &lt;/jsp-param&gt;
+    &lt;/jsp-descriptor&gt;
+
+    &lt;!-- 项目名 --&gt;
+    &lt;context-root&gt;slyy&lt;/context-root&gt;
+    &lt;container-descriptor&gt;
+        &lt;!-- 优先加载WEB-INF下classes --&gt;
+        &lt;prefer-web-inf-classes&gt;true&lt;/prefer-web-inf-classes&gt;
+    &lt;/container-descriptor&gt;
+    &lt;session-descriptor&gt;
+         &lt;debug-enabled&gt;true&lt;/debug-enabled&gt;
+        &lt;!-- &lt;persistent-store-type&gt;replicated&lt;/persistent-store-type&gt; --&gt;
+         &lt;persistent-store-type&gt;async-replicated-if-clustered&lt;/persistent-store-type&gt;
+         &lt;sharing-enabled&gt;true&lt;/sharing-enabled&gt;
+    &lt;/session-descriptor&gt;
+&lt;/weblogic-web-app&gt;
+</code></pre>
+
+<p>weblogic集群内要配置复制组，在console服务器菜单下，受管的server内集群标签下配置复制组。</p>
+
+<p>Weblogic的session持久化策略是在weblogic.xml的persistent-store-type参数中 指定，缺省状态下为memory，共有如下所列9种选项：</p>
+
+<ul>
+<li>memory—不启用Session持久化.</li>
+<li>replicated—跟 memory一样, 但是session数据可以在集群服务器之间复制.</li>
+<li>replicated_if_clustered—如果Web应用时部署在一个集群服务器中，是replicated的，否则为memory</li>
+<li>async-replicated—异步的session复制</li>
+<li>async-replicated-if-clustered—如果是在集群环境中，启用replicated，否则启用in memory模式。</li>
+<li>async-jdbc—异步的基于jdbc的session持久化</li>
+<li>jdbc—使用数据库来进行session的持久化.</li>
+<li>cookie—所有的session数据存储在用户端的cookie中.</li>
+</ul>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2019/8/11</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Middleware.html'>中间件</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://zhangyongbo.github.io/weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="RedHat%E5%AE%89%E8%A3%85JDK.html">
+                
+                  <h1>RedHat安装JDK</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>使用root用户登录系统，并在/opt/目录下创建Java文件夹：</p>
+
+<pre class="line-numbers"><code class="language-shell">su - root
+cd /opt/
+mkdir Java
+chmod -R 775 /opt/Java
+</code></pre>
+
+<p>将下载的安装包解压到Java目录中：</p>
+
+<pre class="line-numbers"><code class="language-shell">cd Java
+tar -zxvf jdk-7u80-linux-x64.tar.gz
+</code></pre>
+
+<p>编辑/etc/profile文件，添加JDK环境变量配置信息：</p>
+
+<pre class="line-numbers"><code class="language-shell">vim /etc/profile
+export JAVA_HOME=/opt/Java/jdk1.7.0_80
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+export JRE_HOME=$JAVA_HOME/jre
+</code></pre>
+
+<p>执行重启命令或者刷新环境变量命令：</p>
+
+<pre class="line-numbers"><code class="language-shell">source /etc/profile
+或
+reboot
+</code></pre>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2019/8/11</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='DataBase.html'>DataBase</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://zhangyongbo.github.io/RedHat%E5%AE%89%E8%A3%85JDK.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="JMail%E9%82%AE%E4%BB%B6%E5%8F%91%E9%80%81.html">
                 
@@ -194,40 +376,6 @@
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="js%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7.html">
-                
-                  <h1>js时间处理工具</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="js%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2019/8/10</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='Web.html'>Web</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://zhangyongbo.github.io/js%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -239,7 +387,7 @@
 			  </div>
 			  <div class="large-6 columns">
 			<p class="text-right" style="padding-top:25px;">
-			
+			 <a href="all_1.html">&raquo; Next Page</a> 
 			</p>
 			  </div>
 			</div>
@@ -285,6 +433,12 @@
             <a href="Java.html"><strong>Java</strong></a>
         
             <a href="Web.html"><strong>Web</strong></a>
+        
+            <a href="DataBase.html"><strong>DataBase</strong></a>
+        
+            <a href="Middleware.html"><strong>中间件</strong></a>
+        
+            <a href="Other.html"><strong>Other</strong></a>
          
         </p>
 
@@ -301,6 +455,24 @@
 	      
 		      
 			      <li class="post">
+			        <a href="15655055338215.html">企业常用资产利率换算</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="weblogic%E9%9B%86%E7%BE%A4session%E5%A4%8D%E5%88%B6.html">weblogic集群session复制</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="RedHat%E5%AE%89%E8%A3%85JDK.html">RedHat安装JDK</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="JMail%E9%82%AE%E4%BB%B6%E5%8F%91%E9%80%81.html">JMail邮件发送</a>
 			      </li>
 		     
@@ -312,10 +484,6 @@
 		     
 		  
 		      
-			      <li class="post">
-			        <a href="js%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7.html">js时间处理工具</a>
-			      </li>
-		     
 		   
 		  		</ul>
                 </div>
