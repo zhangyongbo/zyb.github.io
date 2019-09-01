@@ -1,0 +1,1232 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="zhangyongbo Z先生 JAVA CMS">
+    <meta name="baidu-site-verification" content>
+    <meta name="google-site-verification" content>
+    <meta name="description" content="Z先生的乱语">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google-site-verification" content="C7uZSxfsIf1fAm-_QqaoWPHA8xA7KDgzyFrp0ZqE-04">
+    <title>Z先生的乱语</title>
+    <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?eda18d904874671c1f1d416f0a0b4ee6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/zyb.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Z先生的乱语</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/contact" class="waves-effect waves-light">
+            
+            <span>留言板</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/zyb.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Z先生的乱语</div>
+        <div class="logo-desc">
+            
+            Z先生 | JAVA | CMS
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        <li>
+            <a href="/contact" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-link"></i>
+                
+                留言板
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/zhangyongbo" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/zhangyongbo" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color:rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+    <div id="prev-cover" class="left waves-effect carousel-control">
+        <i class="icon fa fa-angle-left"></i>
+    </div>
+    <div id="next-cover" class="right waves-effect carousel-control">
+        <i class="icon fa fa-angle-right"></i>
+    </div>
+    
+
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                <!-- 
+                    一个码农的胡言乱语……
+                 -->
+                
+                    一个码农的胡言乱语……
+                
+            </div>
+
+            <div class="description center-align">
+                
+                    <!-- Z先生 | JAVA | CMS -->
+                    <span id="jinrishici-sentence">正在加载今日诗词...</span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// 每天切换 banner 图.  Switch banner image every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
+
+                
+                <a href="https://github.com/zhangyongbo" class="waves-effect waves-light btn" target="_blank">
+                    <i class="fa fa-github-alt"></i>Github
+                </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/zhangyongbo" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:china.zhangyongbo@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="https://user.qzone.qq.com/785419852" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="weixin://contacts/profile/zybforwx" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-wechat"></i>
+    </a>
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/67.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">高效用Google</div>
+                    <div class="description center-align">
+                    
+                        如果票选近二十年最伟大的发明，我相信搜索引擎肯定会占据一个不容小觑的位置，它不单是一项发明，更是一项成就，最大程度消灭了信息的不平等。既然人人都可以接触到海量的信息，那么衡量信息财富多寡就只剩下技巧这惟一的标准了：**善用搜索引擎的都是信息时代的富翁，不懂搜索引擎的都是信息时代的负翁**。
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/2019/08/28/gao-xiao-yong-google/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<script>
+$(function () {
+    let coverSlider = $('.carousel');
+    coverSlider.carousel({
+        duration: Number('120'),
+        fullWidth: true,
+        indicators: 'true' === 'true'
+    });
+
+    let carouselIntervalId;
+    
+    // Loop to call the next cover article picture.
+    let autoCarousel = function() {
+        carouselIntervalId = setInterval(function () {
+            coverSlider.carousel('next');
+        }, 5000);
+    };
+    autoCarousel();
+    
+
+    let restartPlay = function () {
+        
+        clearInterval(carouselIntervalId);
+        autoCarousel();
+        
+    };
+
+    
+    // prev and next cover post.
+    $('#prev-cover').click(function () {
+        coverSlider.carousel('prev');
+        restartPlay();
+    });
+    $('#next-cover').click(function () {
+        coverSlider.carousel('next');
+        restartPlay();
+    });
+    
+});
+</script>
+
+
+
+<main class="content">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                    <div class="dream">
+    
+    <div class="title center-align">
+        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;神秘嘉宾
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            我搬到谁的隔壁，谁成了我的邻居。鸣谢生命有你参与，笑纳我的邀请。
+        </div>
+    </div>
+</div>
+                    
+
+                    
+                    
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+
+    /*
+   //https://music.163.com/api/playlist/detail?id=131915944
+   //原地址受跨域影响，使用第三方api  https://v1.itooi.cn/netease/songList获取
+   //https://api.imjad.cn/cloudmusic?id=131915944&type=playlist
+   //https://api.imjad.cn/cloudmusic/?id=416388799&type=detail //获取歌曲详情，type=playlist获取的tracks节点只有10首歌，trackIds节点有歌单所有歌曲id
+    $.getJSON('https://v1.itooi.cn/netease/songList',{id:'131915944',type:'playlist'},function(data){
+        var msl=data.playlist.tracks;//第三方api数据结构
+        // var msl=data.result.tracks;//官方数据结构
+        var m_json=new Array()
+        for(var i=0;i<msl.length;i++){
+            var m_m={};
+            var ms=msl[i];
+            var m_artist="";//歌手
+            for(var j=0;j<ms.ar.length;j++){
+                if(m_artist!="")m_artist+=",";
+                m_artist+=ms.ar[j].name;
+            }
+            var m_name=ms.name;//歌名
+            var m_id=ms.id;//歌曲id
+            var m_pic=ms.al.picUrl;//歌曲图片
+            m_m.name=m_name;
+            m_m.artist=m_artist;
+            m_m.url='https://music.163.com/song/media/outer/url?id='+m_id+'.mp3';
+            m_m.cover=m_pic;
+            m_json[i]=m_m;
+        }
+        // console.log(JSON.stringify(m_json));
+        new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: 'false' === 'true',
+            autoplay: 'false' === 'true',
+            theme: '#542674',
+            loop: 'all',
+            order: 'list',
+            preload: 'auto',
+            volume: Number('0.7'),
+            listFolded: 'false' === 'true',
+            listMaxHeight: '135px',
+            audio: m_json //audiosJson //m_json
+        });
+    });
+
+    */
+   // /*
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'false' === 'true',
+        theme: '#542674',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '135px',
+        audio: JSON.parse('[{"name":"明月天涯","artist":"五音Jw","url":"https://music.163.com/song/media/outer/url?id=416388799.mp3","cover":"http://p1.music.126.net/m3E8aIuHCZ1qGg1WEN2VFA==/17981413160792921.jpg"},{"name":"盗将行","artist":"花粥,马雨阳","url":"https://music.163.com/song/media/outer/url?id=574566207.mp3","cover":"http://p1.music.126.net/-qHPT3rhxDlu5zQV9NcQ-A==/109951163555860423.jpg"},{"name":"出山","artist":"花粥,王胜娚","url":"https://music.163.com/song/media/outer/url?id=1313354324.mp3","cover":"http://p1.music.126.net/xUAfdMHdXhu3BmO4g8nOYA==/109951163573311341.jpg"},{"name":"冥心归墟","artist":"蔡翊昇","url":"https://music.163.com/song/media/outer/url?id=465920515.mp3","cover":"http://p1.music.126.net/kdJ2nFUf_CG5duiDdJdTag==/18577348464747718.jpg"},{"name":"天边外","artist":"不才","url":"https://music.163.com/song/media/outer/url?id=33241113.mp3","cover":"http://p2.music.126.net/0NsramhXlm6t4Kex3v2LSA==/109951163926966859.jpg"},{"name":"醉话江湖","artist":"河图,月蝕原创音乐","url":"https://music.163.com/song/media/outer/url?id=493054914.mp3","cover":"http://p2.music.126.net/Mvvjj5wkXfFRePoUSS2i5Q==/109951162983672767.jpg"},{"name":"既生厌","artist":"昙骨","url":"https://music.163.com/song/media/outer/url?id=434070892.mp3","cover":"http://p2.music.126.net/iIJGX-Unaa0P3yVpMuLdIA==/17664753812207223.jpg"},{"name":"琼花房","artist":"胡碧乔","url":"https://music.163.com/song/media/outer/url?id=443194241.mp3","cover":"http://p2.music.126.net/F_7zR_r5D6M62-tUVfVPKA==/109951162814101771.jpg"},{"name":"天行九歌","artist":"霍尊","url":"https://music.163.com/song/media/outer/url?id=414118616.mp3","cover":"http://p2.music.126.net/YqpP12ONNFkIiX4TAQ62gw==/1410673429302015.jpg"},{"name":"琴师","artist":"音频怪物","url":"https://music.163.com/song/media/outer/url?id=184467.mp3","cover":"http://p2.music.126.net/CTaIU856FZ2snV-nEnLC_g==/118747255813392.jpg"},{"name":"谓风【双笙&流仙】","artist":"双笙&流仙","url":"https://music.163.com/song/media/outer/url?id=477803343.mp3","cover":"http://p2.music.126.net/DQ115Y5Xez0iQrMp-r1AUw==/109951162926174358.jpg"},{"name":"《笑傲江湖》剧情歌","artist":"楚曌岚,阿册","url":"https://music.163.com/song/media/outer/url?id=29736144.mp3","cover":"http://p2.music.126.net/izdGjlRlcR3sx26OXZOiHw==/6631154628171782.jpg"},{"name":"一首想不通的古风","artist":"玄觞,贰婶,H6","url":"https://music.163.com/song/media/outer/url?id=526068535.mp3","cover":"http://p2.music.126.net/bC6HDpzFhj_AZ6efd2ZY2A==/109951163092673022.jpg"},{"name":"画舫烟中浅","artist":"Pig小优","url":"https://music.163.com/song/media/outer/url?id=516512122.mp3","cover":"http://p2.music.126.net/C1rBtNIvfW074MkgN6NVKg==/109951163054279417.jpg"},{"name":"狂浪生","artist":"一棵小葱","url":"https://music.163.com/song/media/outer/url?id=463895473.mp3","cover":"http://p2.music.126.net/76i0_0xlAs2khGigusHloA==/109951162871995115.jpg"},{"name":"风筝误","artist":"刘珂矣","url":"https://music.163.com/song/media/outer/url?id=32785674.mp3","cover":"http://p2.music.126.net/SKujq5vqqv4KYOVFk7SiRA==/3407386538630284.jpg"},{"name":"锦上","artist":"叶里","url":"https://music.163.com/song/media/outer/url?id=34182359.mp3","cover":"http://p2.music.126.net/A1fB7YqYDHBNutp8vhphLA==/17606479695653093.jpg"},{"name":"我的一个道姑朋友（Cover タイナカ彩智 / Lon）","artist":"纱琉璃Shelley","url":"https://music.163.com/song/media/outer/url?id=459723209.mp3","cover":"http://p2.music.126.net/wKElCVgA4tYkwZVTkskDgw==/109951162859809836.jpg"},{"name":"云长","artist":"赵钶","url":"https://music.163.com/song/media/outer/url?id=503127217.mp3","cover":"http://p2.music.126.net/NsGXFKlMr1hDqdrQ5Vg89g==/109951163016436390.jpg"},{"name":"离人愁","artist":"李袁杰","url":"https://music.163.com/song/media/outer/url?id=536502758.mp3","cover":"http://p2.music.126.net/GwuLAjpfZysAB9U5rC9C9g==/109951163248612704.jpg"},{"name":"洛阳夜雨","artist":"HITA","url":"https://music.163.com/song/media/outer/url?id=427610806.mp3","cover":"http://p2.music.126.net/KNkhJSfZsChuAOwp5ad50Q==/18791753231401584.jpg"},{"name":"念","artist":"石头","url":"https://music.163.com/song/media/outer/url?id=30482452.mp3","cover":"http://p2.music.126.net/AjfRV3jS_2wOcgxo3oWb8A==/7885697394624325.jpg"},{"name":"奸雄","artist":"贰婶","url":"https://music.163.com/song/media/outer/url?id=415086571.mp3","cover":"http://p2.music.126.net/Q9izepmpX9PglFPtxwgQ0g==/18260689114425955.jpg"},{"name":"那盏茶","artist":"金志文","url":"https://music.163.com/song/media/outer/url?id=27927640.mp3","cover":"http://p2.music.126.net/Q2IriHmSzoZqZ4s9QdeS6Q==/3409585558713988.jpg"},{"name":"闻战","artist":"i2star","url":"https://music.163.com/song/media/outer/url?id=366255.mp3","cover":"http://p2.music.126.net/tTo6LjFZLQLUFxYRnluF-g==/35184372100892.jpg"},{"name":"醒世文章","artist":"林斜阳,嫌弃","url":"https://music.163.com/song/media/outer/url?id=462478986.mp3","cover":"http://p2.music.126.net/vvRva-GuE1lbGneJFLzBFw==/109951162867608412.jpg"},{"name":"陌上花开","artist":"小爱的妈","url":"https://music.163.com/song/media/outer/url?id=439915133.mp3","cover":"http://p2.music.126.net/VDzqLf2w5SV-VU1FH1AwNg==/6657542906420975.jpg"},{"name":"若某日我封笔","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=525558041.mp3","cover":"http://p2.music.126.net/G6jjhEcRWZIj1bC9Sq9DQA==/5787829208803716.jpg"},{"name":"凤凰劫","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=101076.mp3","cover":"http://p2.music.126.net/xHVVFtjMmq4cM9xllO52yQ==/101155069767537.jpg"},{"name":"不见有情","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=496617470.mp3","cover":"http://p2.music.126.net/UeovQN_fbWqxz2Fcy7m8Kw==/18905002928266397.jpg"},{"name":"不谓侠（Cover 萧忆情Alex）","artist":"CRITTY","url":"https://music.163.com/song/media/outer/url?id=482141126.mp3","cover":"http://p2.music.126.net/DxLp26GCKHfNcmRb_2NErA==/109951162940006105.jpg"},{"name":"缘分一道桥","artist":"王力宏,谭维维","url":"https://music.163.com/song/media/outer/url?id=440411424.mp3","cover":"http://p2.music.126.net/8MW-Aeleuk_gcvc7T2qZJg==/109951163779532550.jpg"},{"name":"葬仙-记狠人大帝（Cover 张杰）","artist":"叶里,苑舍","url":"https://music.163.com/song/media/outer/url?id=487593280.mp3","cover":"http://p2.music.126.net/XaLhRmudzYdt4b8zqUN-9Q==/109951162961283648.jpg"},{"name":"红昭愿","artist":"音阙诗听","url":"https://music.163.com/song/media/outer/url?id=452986458.mp3","cover":"http://p2.music.126.net/8ltR3o9R8uJ9_5Cc71cDhA==/109951162951242154.jpg"},{"name":"典狱司","artist":"音频怪物","url":"https://music.163.com/song/media/outer/url?id=422790454.mp3","cover":"http://p2.music.126.net/VqWZ_QWMF1QTvNxkN70geg==/1387583687741366.jpg"},{"name":"人间朝暮","artist":"少司命,CRITTY","url":"https://music.163.com/song/media/outer/url?id=31421862.mp3","cover":"http://p2.music.126.net/GjrhJ__5m-ybUZi46ZhAfg==/2538772351464052.jpg"},{"name":"醉赤壁","artist":"林俊杰","url":"https://music.163.com/song/media/outer/url?id=108478.mp3","cover":"http://p2.music.126.net/s6zFxvXe5kOxub4_x4rZhQ==/109951163052847567.jpg"},{"name":"采薇","artist":"HITA","url":"https://music.163.com/song/media/outer/url?id=239562.mp3","cover":"http://p2.music.126.net/VKDrbjcpeVnugNXM5FTvtQ==/62672162784172.jpg"},{"name":"湖光水色调","artist":"i2star","url":"https://music.163.com/song/media/outer/url?id=28274794.mp3","cover":"http://p2.music.126.net/0IfSoI2hhLXsctPV6-aBWQ==/3276544652384842.jpg"},{"name":"封刀不为峥嵘","artist":"漆柚","url":"https://music.163.com/song/media/outer/url?id=434052631.mp3","cover":"http://p2.music.126.net/7OqX7PyaDXbmeejCwgo1gg==/18023194602718495.jpg"},{"name":"仙居谣","artist":"Zz果果,樱九,鸦青","url":"https://music.163.com/song/media/outer/url?id=33075082.mp3","cover":"http://p2.music.126.net/xphtETT9CVE-IjRzGx20YA==/7969260279094350.jpg"},{"name":"流云辞·司夏","artist":"司夏","url":"https://music.163.com/song/media/outer/url?id=34167956.mp3","cover":"http://p1.music.126.net/dbNkAQmHi2TUzgkE7Zox1A==/3318326092881882.jpg"},{"name":"灵契","artist":"Assen捷,五音Jw","url":"https://music.163.com/song/media/outer/url?id=28660032.mp3","cover":"http://p1.music.126.net/FPLF1xShAN9dMkrTNfnLlg==/109951163926963485.jpg"},{"name":"白石溪（Cover 洛天依 / 乐正凌）","artist":"玄觞","url":"https://music.163.com/song/media/outer/url?id=430787181.mp3","cover":"http://p1.music.126.net/L0WuU7XiLaSxHDD-P7_oug==/17813187881905001.jpg"},{"name":"殿书","artist":"奇然","url":"https://music.163.com/song/media/outer/url?id=420008229.mp3","cover":"http://p1.music.126.net/wEE0d3rD8ivA0cjzs-gIeQ==/18285977881922556.jpg"},{"name":"苏幕遮","artist":"张晓棠","url":"https://music.163.com/song/media/outer/url?id=25640582.mp3","cover":"http://p1.music.126.net/WnuS2v6i9qKWCHKTxpw4uA==/19025949207225417.jpg"},{"name":"磷火","artist":"小魂","url":"https://music.163.com/song/media/outer/url?id=28315292.mp3","cover":"http://p1.music.126.net/8vwoNNvETMDOGZYH8G5LIA==/6031920790151788.jpg"},{"name":"忘记","artist":"西瓜JUN","url":"https://music.163.com/song/media/outer/url?id=430793303.mp3","cover":"http://p1.music.126.net/SlJ3zw28bs4WotZPVKtPDQ==/17795595695908920.jpg"},{"name":"山有木兮-橙光《人鱼传说之长生烛》主题曲","artist":"伦桑,橙光音乐","url":"https://music.163.com/song/media/outer/url?id=425100599.mp3","cover":"http://p1.music.126.net/q-aYBELr0yWN11Lbtyzsqw==/18190320370352462.jpg"},{"name":"千秋此意","artist":"司夏,汐音社","url":"https://music.163.com/song/media/outer/url?id=413829631.mp3","cover":"http://p1.music.126.net/EX9dtcuR52Tf_8Omb2Jx7A==/17707634765654133.jpg"},{"name":"第三十八年夏至","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=101126.mp3","cover":"http://p1.music.126.net/Q2dCo2lH53tqJe2zjaC56Q==/3393092900107787.jpg"},{"name":"造梦者","artist":"以冬","url":"https://music.163.com/song/media/outer/url?id=32196517.mp3","cover":"http://p1.music.126.net/SQF5vSrxTZ5myrmVWxFStQ==/3254554419585268.jpg"},{"name":"雅乐寻踪","artist":"HITA,Aki阿杰,小爱的妈","url":"https://music.163.com/song/media/outer/url?id=28381289.mp3","cover":"http://p2.music.126.net/DA8mN9FuPy0vZPUiC7cTdQ==/6046214441340887.jpg"},{"name":"红颜","artist":"岚AYA","url":"https://music.163.com/song/media/outer/url?id=33854100.mp3","cover":"http://p2.music.126.net/gvU5elgCPar8nsUeNWaiOg==/3348012906580223.jpg"},{"name":"万里残阳","artist":"张江","url":"https://music.163.com/song/media/outer/url?id=32364340.mp3","cover":"http://p2.music.126.net/SQF5vSrxTZ5myrmVWxFStQ==/3254554419585268.jpg"},{"name":"黯然销魂","artist":"玄觞","url":"https://music.163.com/song/media/outer/url?id=30569561.mp3","cover":"http://p2.music.126.net/NQRI8EzBd2wrsNNcublcMg==/109951163857115444.jpg"},{"name":"封疆","artist":"东篱","url":"https://music.163.com/song/media/outer/url?id=81391.mp3","cover":"http://p2.music.126.net/Ifu9zQY1k0tF_es5M_GX4w==/123145302324076.jpg"},{"name":"无归","artist":"叶里","url":"https://music.163.com/song/media/outer/url?id=404465743.mp3","cover":"http://p2.music.126.net/0m4bP0wIMUZw0Xf-Ke7yJw==/18358545649376691.jpg"},{"name":"十字迷局","artist":"HITA","url":"https://music.163.com/song/media/outer/url?id=33715045.mp3","cover":"http://p2.music.126.net/gvU5elgCPar8nsUeNWaiOg==/3348012906580223.jpg"},{"name":"天涯","artist":"孙晔,喵☆酱","url":"https://music.163.com/song/media/outer/url?id=29567104.mp3","cover":"http://p2.music.126.net/fhxLLN4eqbX1bW9eGaTmSg==/2538772349388939.jpg"},{"name":"西瓜JUN&泥鳅&方块&叶洛洛-九九八十一","artist":"卡其漠,西瓜JUN,泥鳅Niko,知性的小方块,叶洛洛","url":"https://music.163.com/song/media/outer/url?id=407759975.mp3","cover":"http://p2.music.126.net/AxM2QQoPmrPHgLKSq-z8XQ==/18340953463259130.jpg"},{"name":"九九八十一（Cover：乐正绫 / 洛天依）","artist":"双笙,南久,易言,樊棋","url":"https://music.163.com/song/media/outer/url?id=409649830.mp3","cover":"http://p2.music.126.net/0KcMYyKmWR-6eCkR8znePw==/18198016951567516.jpg"},{"name":"乱舞苍穹——天之痕女声独唱版","artist":"Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=297113.mp3","cover":"http://p2.music.126.net/R2P6jX0xt3iiM-w99bQLpA==/117647744184797.jpg"},{"name":"缥缃醉","artist":"刘珂矣","url":"https://music.163.com/song/media/outer/url?id=34468948.mp3","cover":"http://p2.music.126.net/SKujq5vqqv4KYOVFk7SiRA==/3407386538630284.jpg"},{"name":"松窗棋罢","artist":"HITA","url":"https://music.163.com/song/media/outer/url?id=239539.mp3","cover":"http://p2.music.126.net/T3iAMoIS72Og3_TD-CcP0w==/76965813957789.jpg"},{"name":"朱砂泪","artist":"董真","url":"https://music.163.com/song/media/outer/url?id=224324.mp3","cover":"http://p2.music.126.net/oNwgwvz7rFfJ515X4Mxnmw==/42880953484389.jpg"},{"name":"清风与我","artist":"萧忆情Alex","url":"https://music.163.com/song/media/outer/url?id=35955651.mp3","cover":"http://p2.music.126.net/EnQ0J1f_-p8S2OunnRiGhA==/3298534885062503.jpg"},{"name":"阳关调","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=101082.mp3","cover":"http://p2.music.126.net/xHVVFtjMmq4cM9xllO52yQ==/101155069767537.jpg"},{"name":"风起天阑","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=27571862.mp3","cover":"http://p2.music.126.net/nlocSgc4D7T-h6S3f6IybQ==/6003333487842277.jpg"},{"name":"王侯将相","artist":"裂天,玉璇玑","url":"https://music.163.com/song/media/outer/url?id=28315294.mp3","cover":"http://p2.music.126.net/8vwoNNvETMDOGZYH8G5LIA==/6031920790151788.jpg"},{"name":"好梦如旧","artist":"HITA,林斜阳","url":"https://music.163.com/song/media/outer/url?id=28546248.mp3","cover":"http://p2.music.126.net/D22IKBn-eUq-EebVSbAuJA==/5934064255276851.jpg"},{"name":"江湖写照","artist":"柏凝","url":"https://music.163.com/song/media/outer/url?id=35955877.mp3","cover":"http://p2.music.126.net/EnQ0J1f_-p8S2OunnRiGhA==/3298534885062503.jpg"},{"name":"新霸王别姬","artist":"W.K.","url":"https://music.163.com/song/media/outer/url?id=28445961.mp3","cover":"http://p2.music.126.net/QPpIkYq7T3Ab0X12nrVmjQ==/109951163011486170.jpg"},{"name":"绝世 古龙群侠 大合唱","artist":"Assen捷,橙翼,天琊","url":"https://music.163.com/song/media/outer/url?id=28863142.mp3","cover":"http://p2.music.126.net/IXyIZp__D2uHYVj7NBVrwg==/5985741302175547.jpg"},{"name":"战魂·云隐","artist":"小魂,玉璇玑","url":"https://music.163.com/song/media/outer/url?id=28315290.mp3","cover":"http://p2.music.126.net/8vwoNNvETMDOGZYH8G5LIA==/6031920790151788.jpg"},{"name":"天策·枪魂","artist":"群星","url":"https://music.163.com/song/media/outer/url?id=27946478.mp3","cover":"http://p2.music.126.net/qBfBgInE6Hbyjtet0Ss2Hw==/3407386535537979.jpg"},{"name":"翎羽神","artist":"小顶顶","url":"https://music.163.com/song/media/outer/url?id=33599062.mp3","cover":"http://p2.music.126.net/gvU5elgCPar8nsUeNWaiOg==/3348012906580223.jpg"},{"name":"一身诗意千寻瀑","artist":"不才","url":"https://music.163.com/song/media/outer/url?id=28798308.mp3","cover":"http://p2.music.126.net/5vLpAQplaeMwEuhDO0HXww==/5852700394904058.jpg"},{"name":"英雄寞","artist":"郑中基","url":"https://music.163.com/song/media/outer/url?id=28959186.mp3","cover":"http://p2.music.126.net/370FlbvJbDJ-vX7QwrIYXA==/8987408045456825.jpg"},{"name":"千年缘","artist":"心然","url":"https://music.163.com/song/media/outer/url?id=314315.mp3","cover":"http://p2.music.126.net/dQl5FK6hkjrrr5Ph6tBbkQ==/18778559092796622.jpg"},{"name":"剑三群像·江湖意","artist":"群星","url":"https://music.163.com/song/media/outer/url?id=28285725.mp3","cover":"http://p2.music.126.net/RDQy2q05vy6SArA9W2LZ-Q==/3295236350128133.jpg"},{"name":"不悔","artist":"小曲儿,HITA","url":"https://music.163.com/song/media/outer/url?id=175534.mp3","cover":"http://p2.music.126.net/ngsFhZ5RGjvqdW7x-EmA3g==/94557999989684.jpg"},{"name":"梅子黄尽时","artist":"smile_小千","url":"https://music.163.com/song/media/outer/url?id=28661896.mp3","cover":"http://p2.music.126.net/t8worC_CQVcgvcA708-QlQ==/5968149115899839.jpg"},{"name":"权御天下(念白付)","artist":"凑诗","url":"https://music.163.com/song/media/outer/url?id=30987926.mp3","cover":"http://p2.music.126.net/J3VtOLW7ilNc0byWk37n3g==/3387595325986974.jpg"},{"name":"剑啸江湖","artist":"小曲儿","url":"https://music.163.com/song/media/outer/url?id=29357029.mp3","cover":"http://p2.music.126.net/IXyIZp__D2uHYVj7NBVrwg==/5985741302175547.jpg"},{"name":"醉今朝","artist":"祝贺,W.K.","url":"https://music.163.com/song/media/outer/url?id=297245.mp3","cover":"http://p2.music.126.net/hLIibh6fF3TZVXdzfm_aAA==/18141941859036324.jpg"},{"name":"春醪独抚 ","artist":"紫凌孤君,祝贺","url":"https://music.163.com/song/media/outer/url?id=29984040.mp3","cover":"http://p2.music.126.net/Kog7y33jJpr3R2foHGuXhQ==/2539871862571110.jpg"},{"name":"采茶纪","artist":"双笙","url":"https://music.163.com/song/media/outer/url?id=36895537.mp3","cover":"http://p1.music.126.net/1y_TLp7bftROMh-OeuL3mA==/18336555416528366.jpg"},{"name":"崖山之前，江山一夜","artist":"梦璟SAYA","url":"https://music.163.com/song/media/outer/url?id=28762533.mp3","cover":"http://p1.music.126.net/jqsIewB-vWFwyxUn_keKJQ==/6016527627848623.jpg"},{"name":"谁主沉浮.千秋诉（Cover ENA）","artist":"梦璟SAYA","url":"https://music.163.com/song/media/outer/url?id=279687.mp3","cover":"http://p1.music.126.net/qY9KWAC2v921C_WKOPKcXw==/109951163112518274.jpg"},{"name":"莫问今朝","artist":"音频怪物","url":"https://music.163.com/song/media/outer/url?id=184445.mp3","cover":"http://p1.music.126.net/es5wc1arpOXuRYgcbUfFFg==/36283883717811.jpg"},{"name":"酩酊语 其三 棠红棣雪","artist":"山猫","url":"https://music.163.com/song/media/outer/url?id=27908082.mp3","cover":"http://p1.music.126.net/Z5WVnSloIQ8nqBdLpEru-Q==/3305131954153665.jpg"},{"name":"溯世书","artist":"音频怪物","url":"https://music.163.com/song/media/outer/url?id=184406.mp3","cover":"http://p1.music.126.net/tOydpWyBFW1nAsVaiuqJYA==/120946279068606.jpg"},{"name":"清明上河图","artist":"李玉刚","url":"https://music.163.com/song/media/outer/url?id=132316.mp3","cover":"http://p1.music.126.net/izy0ff5jfpPrW9ShXKidaA==/91259465118117.jpg"},{"name":"隐","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=28452037.mp3","cover":"http://p1.music.126.net/RB2IpsG1ajiQbF_HfR35IQ==/5953855464601395.jpg"},{"name":"墨衣","artist":"不才","url":"https://music.163.com/song/media/outer/url?id=28828196.mp3","cover":"http://p1.music.126.net/5vLpAQplaeMwEuhDO0HXww==/5852700394904058.jpg"},{"name":"春意远","artist":"林斜阳","url":"https://music.163.com/song/media/outer/url?id=33075133.mp3","cover":"http://p1.music.126.net/RbJ9YEWzu4bcs0nar35A3w==/109951163926970215.jpg"},{"name":"参商(纯歌版)","artist":"不才","url":"https://music.163.com/song/media/outer/url?id=29719651.mp3","cover":"http://p1.music.126.net/izdGjlRlcR3sx26OXZOiHw==/6631154628171782.jpg"},{"name":"故人叹","artist":"吴琼","url":"https://music.163.com/song/media/outer/url?id=302891.mp3","cover":"http://p1.music.126.net/Q0HlZVp-3sgbpJW8v0jufA==/117647744190029.jpg"},{"name":"我执","artist":"NL不分,阿睿凌霓剑裳","url":"https://music.163.com/song/media/outer/url?id=29827166.mp3","cover":"http://p1.music.126.net/Adh5bQHsR8rACTR65jm6TA==/3240260767930883.jpg"},{"name":"鹃","artist":"Tacke竹桑,小曲儿","url":"https://music.163.com/song/media/outer/url?id=28188263.mp3","cover":"http://p1.music.126.net/9Oyd_61-tp1OsLeHPiVuNg==/5860396976152190.jpg"},{"name":"齐天","artist":"NL不分,祝贺","url":"https://music.163.com/song/media/outer/url?id=30089456.mp3","cover":"http://p1.music.126.net/Kog7y33jJpr3R2foHGuXhQ==/2539871862571110.jpg"},{"name":"倾尽天下","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=366291.mp3","cover":"http://p1.music.126.net/SMnGWKnnfnlTdi9E8-O3zA==/120946279068522.jpg"},{"name":"闻说","artist":"音频怪物,HITA","url":"https://music.163.com/song/media/outer/url?id=184400.mp3","cover":"http://p1.music.126.net/nN0ZBgvVJ1d2I00eY2nWqQ==/89060441862988.jpg"},{"name":"寸心笑傲","artist":"绯村柯北","url":"https://music.163.com/song/media/outer/url?id=28592868.mp3","cover":"http://p1.music.126.net/L9CfhB8IUN06kfpIY1C5gQ==/6061607604380494.jpg"},{"name":"长歌行","artist":"i2star","url":"https://music.163.com/song/media/outer/url?id=35617509.mp3","cover":"http://p1.music.126.net/PLU5Eqkg9PR8mDDuFo6q9w==/3410685070284421.jpg"},{"name":"霁夜茶","artist":"小曲儿","url":"https://music.163.com/song/media/outer/url?id=28188385.mp3","cover":"http://p1.music.126.net/f9iaz8pm3RDJP8JHauqp8A==/109951163865781664.jpg"},{"name":"剑三·明教—【日月明尊】","artist":"阿睿凌霓剑裳","url":"https://music.163.com/song/media/outer/url?id=29567787.mp3","cover":"http://p1.music.126.net/fhxLLN4eqbX1bW9eGaTmSg==/2538772349388939.jpg"},{"name":"侠义","artist":"五色石南叶,Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=27928577.mp3","cover":"http://p2.music.126.net/JpuFCURTev96fAs-uWxohg==/5842804790012167.jpg"},{"name":"千秋月别西楚将","artist":"EDIQ","url":"https://music.163.com/song/media/outer/url?id=81637.mp3","cover":"http://p2.music.126.net/Pdhfy3roemobzUtE8njlUg==/25288767450966.jpg"},{"name":"混沌","artist":"流月","url":"https://music.163.com/song/media/outer/url?id=274598.mp3","cover":"http://p2.music.126.net/WMWzXcUKCA9ul1I6crWH2g==/18680702557672934.jpg"},{"name":"楚狂","artist":"祝贺,NL不分","url":"https://music.163.com/song/media/outer/url?id=29709842.mp3","cover":"http://p2.music.126.net/izdGjlRlcR3sx26OXZOiHw==/6631154628171782.jpg"},{"name":"江影沉浮","artist":"刺青","url":"https://music.163.com/song/media/outer/url?id=29539306.mp3","cover":"http://p2.music.126.net/kCq2Wk7BMN9O18N8RfIGbA==/2536573326366499.jpg"},{"name":"凡夫俗子","artist":"墨明棋妙","url":"https://music.163.com/song/media/outer/url?id=366395.mp3","cover":"http://p2.music.126.net/s1h2RRRwu2NJFVzuEypqyA==/103354093023052.jpg"},{"name":"为龙","artist":"河图","url":"https://music.163.com/song/media/outer/url?id=101085.mp3","cover":"http://p2.music.126.net/xHVVFtjMmq4cM9xllO52yQ==/101155069767537.jpg"},{"name":"魅影醉","artist":"少司命","url":"https://music.163.com/song/media/outer/url?id=29095517.mp3","cover":"http://p2.music.126.net/tHAfnugCElS93EDp5cHLIw==/8909342719897560.jpg"},{"name":"烟雨行舟","artist":"伦桑","url":"https://music.163.com/song/media/outer/url?id=32922246.mp3","cover":"http://p2.music.126.net/-2PG50CSPWywCQ6GGpWphQ==/7947270045631279.jpg"},{"name":"佛说2","artist":"音频怪物","url":"https://music.163.com/song/media/outer/url?id=28996876.mp3","cover":"http://p2.music.126.net/nqb_IzPbdn9qAHZ6DhKB0g==/6627856092289141.jpg"},{"name":"醉春秋","artist":"石头","url":"https://music.163.com/song/media/outer/url?id=28535019.mp3","cover":"http://p2.music.126.net/D22IKBn-eUq-EebVSbAuJA==/5934064255276851.jpg"},{"name":"剑三成男群像·归离","artist":"一群人","url":"https://music.163.com/song/media/outer/url?id=29769312.mp3","cover":"http://p2.music.126.net/izdGjlRlcR3sx26OXZOiHw==/6631154628171782.jpg"},{"name":"爱殇","artist":"小时姑娘","url":"https://music.163.com/song/media/outer/url?id=28315295.mp3","cover":"http://p2.music.126.net/XhAthErESZVYQenvbwepRw==/109951163870853084.jpg"},{"name":"红尘","artist":"小曲儿","url":"https://music.163.com/song/media/outer/url?id=175576.mp3","cover":"http://p2.music.126.net/t0ImdL5lbENKIhnLw7FMNQ==/47279000006737.jpg"},{"name":"侠客某","artist":"祝贺","url":"https://music.163.com/song/media/outer/url?id=29732300.mp3","cover":"http://p2.music.126.net/6_YrXV-C1pwA6mqgpc-AwA==/3244658814290156.jpg"},{"name":"缘生意转","artist":"司夏,河图","url":"https://music.163.com/song/media/outer/url?id=29122617.mp3","cover":"http://p2.music.126.net/IXyIZp__D2uHYVj7NBVrwg==/5985741302175547.jpg"},{"name":"石楠小札","artist":"蔡翊昇","url":"https://music.163.com/song/media/outer/url?id=29005132.mp3","cover":"http://p2.music.126.net/tHAfnugCElS93EDp5cHLIw==/8909342719897560.jpg"},{"name":"眉间雪","artist":"HITA","url":"https://music.163.com/song/media/outer/url?id=29567100.mp3","cover":"http://p2.music.126.net/fhxLLN4eqbX1bW9eGaTmSg==/2538772349388939.jpg"},{"name":"风花雪月","artist":"林斜阳,紫堂宿","url":"https://music.163.com/song/media/outer/url?id=32174251.mp3","cover":"http://p2.music.126.net/aMZS6jTuJg3J_eaykzUP7w==/2931298000136969.jpg"},{"name":"惊蛰·归云","artist":"只有影子,兰芽yaya","url":"https://music.163.com/song/media/outer/url?id=31062292.mp3","cover":"http://p2.music.126.net/jV3wsxNdLiufkG92VFvZAg==/7747158929826603.jpg"},{"name":"帝梦.执天之行","artist":"Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=29825673.mp3","cover":"http://p2.music.126.net/ypTRxTI1UvaRZ_OqIO0h4A==/3240260769629723.jpg"},{"name":"酣梦. 霜刀听雪","artist":"Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=29825641.mp3","cover":"http://p2.music.126.net/ypTRxTI1UvaRZ_OqIO0h4A==/3240260769629723.jpg"},{"name":"噩梦.裂","artist":"Tacke竹桑,重小烟","url":"https://music.163.com/song/media/outer/url?id=29825672.mp3","cover":"http://p2.music.126.net/ypTRxTI1UvaRZ_OqIO0h4A==/3240260769629723.jpg"},{"name":"侠梦.剑锋落拓","artist":"Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=31460198.mp3","cover":"http://p2.music.126.net/ypTRxTI1UvaRZ_OqIO0h4A==/3240260769629723.jpg"},{"name":"霜雪千年","artist":"萧忆情Alex","url":"https://music.163.com/song/media/outer/url?id=36496389.mp3","cover":"http://p2.music.126.net/srjmIxgdjRlCXSjZtl2aaw==/109951163825045428.jpg"},{"name":"牵丝戏","artist":"西瓜JUN","url":"https://music.163.com/song/media/outer/url?id=34072193.mp3","cover":"http://p2.music.126.net/dbNkAQmHi2TUzgkE7Zox1A==/3318326092881882.jpg"},{"name":"光之舞","artist":"Tacke竹桑","url":"https://music.163.com/song/media/outer/url?id=37764195.mp3","cover":"http://p2.music.126.net/grurFcUaD7GOZg9DJ4N_mw==/17968219021125264.jpg"},{"name":"障月","artist":"满汉全席","url":"https://music.163.com/song/media/outer/url?id=32196769.mp3","cover":"http://p2.music.126.net/aMZS6jTuJg3J_eaykzUP7w==/2931298000136969.jpg"},{"name":"弱水三千（cover 石头/张晓棠）","artist":"W.K.","url":"https://music.163.com/song/media/outer/url?id=28445950.mp3","cover":"http://p1.music.126.net/QPpIkYq7T3Ab0X12nrVmjQ==/109951163011486170.jpg"},{"name":"千年空城","artist":"东篱","url":"https://music.163.com/song/media/outer/url?id=29728123.mp3","cover":"http://p1.music.126.net/jQ2fRS91t3KI2bx9f9MTuw==/3229265651489113.jpg"},{"name":"卷珠帘","artist":"霍尊","url":"https://music.163.com/song/media/outer/url?id=28182126.mp3","cover":"http://p1.music.126.net/dcZBbj62pAPdpOyYLwc-1w==/5849401859918772.jpg"},{"name":"红尘客栈","artist":"周杰伦","url":"https://music.163.com/song/media/outer/url?id=25641368.mp3","cover":"http://p1.music.126.net/oL_TYdmT9mm_erNZb187_g==/109951163533013578.jpg"},{"name":"烟花易冷","artist":"周杰伦","url":"https://music.163.com/song/media/outer/url?id=185668.mp3","cover":"http://p1.music.126.net/4E5b_0eDTiMCzYKiVSAerw==/19165587184063665.jpg"},{"name":"东风破","artist":"周杰伦","url":"https://music.163.com/song/media/outer/url?id=186018.mp3","cover":"http://p1.music.126.net/yjVbsgfNeF2h7fIvnxuZDQ==/18894007811887644.jpg"},{"name":"兰亭序","artist":"周杰伦","url":"https://music.163.com/song/media/outer/url?id=185701.mp3","cover":"http://p1.music.126.net/HBanuZpt8SD2kf15AFa6Og==/109951163200234839.jpg"},{"name":"生别离·永别离","artist":"东篱","url":"https://music.163.com/song/media/outer/url?id=28853555.mp3","cover":"http://p1.music.126.net/53AwkMucIiUdQXtTi58PJg==/5971447651011720.jpg"},{"name":"鼓与花","artist":"墨明棋妙","url":"https://music.163.com/song/media/outer/url?id=28957362.mp3","cover":"http://p1.music.126.net/jlAUlLnQG7NgHmOk16BZyw==/8900546627235477.jpg"},{"name":"花满楼","artist":"小魂","url":"https://music.163.com/song/media/outer/url?id=31062977.mp3","cover":"http://p1.music.126.net/ZUTOV4xUZWbqYdJIdqAhaQ==/7719671139148874.jpg"},{"name":"悟惊蛰","artist":"猫饭","url":"https://music.163.com/song/media/outer/url?id=28267589.mp3","cover":"http://p1.music.126.net/RHc65y1sgSKTx3LCqRix7Q==/6008831045869295.jpg"},{"name":"古龙群侠传","artist":"小魂","url":"https://music.163.com/song/media/outer/url?id=31370656.mp3","cover":"http://p1.music.126.net/ly2FJHh5-lYMdC3NZxvavQ==/7714173580661848.jpg"},{"name":"茶女","artist":"茶少","url":"https://music.163.com/song/media/outer/url?id=366007.mp3","cover":"http://p1.music.126.net/MbWestK50FE0vjv1pHiQeQ==/53876069774141.jpg"},{"name":"松烟入墨","artist":"Winky诗","url":"https://music.163.com/song/media/outer/url?id=28765208.mp3","cover":"http://p1.music.126.net/rZ1304NRFlC3a1KoJD-t2A==/109951163781615257.jpg"}]')
+    });
+  //  */
+});
+</script>
+                    
+
+                    
+
+                    <div id="recommend-sections" class="recommend">
+                        
+
+
+
+
+
+<div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;推荐文章</div>
+
+<div class="row">
+
+    
+    
+    <div class="col s12" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/67.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/Other/" class="category" target="_blank">Other</a>
+                    
+                </div>
+                <a href="/2019/08/28/gao-xiao-yong-google/" target="_blank">
+                    <h3 class="post-title">高效用Google</h3>
+                </a>
+                <p class="post-description">如果票选近二十年最伟大的发明，我相信搜索引擎肯定会占据一个不容小觑的位置，它不单是一项发明，更是一项成就，最大程度消灭了信息的不平等。既然人人都可以接触到海量的信息，那么衡量信息财富多寡就只剩下技巧这惟一的标准了：**善用搜索引擎的都是信息时代的富翁，不懂搜索引擎的都是信息时代的负翁**。</p>
+                <a href="/2019/08/28/gao-xiao-yong-google/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/java-jian-cha-shou-qu-you-jian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/81.jpg" class="responsive-img" alt="Java检查收取邮件">
+                            
+                            <span class="card-title">Java检查收取邮件</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            JMail收取邮件，采用网上找的demo，并对其中的邮件格式有误的地址添加解析方法。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/JMail/" target="_blank">
+                            <span class="chip bg-color">JMail</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/activiti-ie-xia-bao-cun-mo-xing-wen-ti/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/62.jpg" class="responsive-img" alt="activiti ie下保存模型问题">
+                            
+                            <span class="card-title">activiti ie下保存模型问题</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            activiti在IE下保存模型失败
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Activiti/" target="_blank">
+                            <span class="chip bg-color">Activiti</span>
+                        </a>
+                        
+                        <a href="/tags/转/" target="_blank">
+                            <span class="chip bg-color">转</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/java-hou-tai-diao-yong-http-jie-kou/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/64.jpg" class="responsive-img" alt="JAVA后台调用http接口">
+                            
+                            <span class="card-title">JAVA后台调用http接口</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            Java后台使用HttpURLConnection进行http请求调用
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Http/" target="_blank">
+                            <span class="chip bg-color">Http</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/activiti-huo-qu-mo-xing-tu-pian-huo-bu-shu-tu-pian/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="activiti获取模型图片或部署图片">
+                            
+                            <span class="card-title">activiti获取模型图片或部署图片</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            获取activiti的模型图片或部署流程图片
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Activiti/" target="_blank">
+                            <span class="chip bg-color">Activiti</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/activiti-huo-qu-liu-cheng-gen-zong-tu/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/77.jpg" class="responsive-img" alt="activiti获取流程跟踪图">
+                            
+                            <span class="card-title">activiti获取流程跟踪图</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            根据流程id获取流程实时跟踪图，已执行节点线路标红。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Activiti/" target="_blank">
+                            <span class="chip bg-color">Activiti</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/activiti-liu-cheng-gen-zong-tu-lian-jie-xian-wen-zi-bu-xian-shi-wen-ti/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="activiti流程跟踪图连接线文字不显示问题">
+                            
+                            <span class="card-title">activiti流程跟踪图连接线文字不显示问题</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            解决activiti生成的流程跟踪图，连接线上面没有描述文字问题。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Activiti/" target="_blank">
+                            <span class="chip bg-color">Activiti</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/31/cron-biao-da-shi-sheng-cheng-qi/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/70.jpg" class="responsive-img" alt="Cron表达式生成器">
+                            
+                            <span class="card-title">Cron表达式生成器</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            本功能取自http://cron.qqe2.com网站在线生成功能。因需要纯前端功能，所以去除了后台加载的最近5次运行时间 
+。同时添加了cron表达式的校验功能，判断表达式的有效性。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Web/" class="post-category" target="_blank">
+                                    Web
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Cron/" target="_blank">
+                            <span class="chip bg-color">Cron</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/28/guan-bi-mac-os-xi-tong-cheng-xu-beng-kui-bao-gao/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="关闭Mac OS系统程序崩溃报告">
+                            
+                            <span class="card-title">关闭Mac OS系统程序崩溃报告</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            如果你希望关闭MacOS系统软件崩溃报告窗口在桌面的显示，只需在「终端」中输入如下命令，回车确认即可。下次如果有应用程序崩溃或意外退出，崩溃报告将不再会在桌面中显示。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Other/" class="post-category" target="_blank">
+                                    Other
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Mac/" target="_blank">
+                            <span class="chip bg-color">Mac</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/08/28/gao-xiao-yong-google/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/67.jpg" class="responsive-img" alt="高效用Google">
+                            
+                            <span class="card-title">高效用Google</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            如果票选近二十年最伟大的发明，我相信搜索引擎肯定会占据一个不容小觑的位置，它不单是一项发明，更是一项成就，最大程度消灭了信息的不平等。既然人人都可以接触到海量的信息，那么衡量信息财富多寡就只剩下技巧这惟一的标准了：**善用搜索引擎的都是信息时代的富翁，不懂搜索引擎的都是信息时代的负翁**。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-28
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Other/" class="post-category" target="_blank">
+                                    Other
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/转/" target="_blank">
+                            <span class="chip bg-color">转</span>
+                        </a>
+                        
+                        <a href="/tags/google/" target="_blank">
+                            <span class="chip bg-color">google</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy; 2019 ZhangYongBo. All Rights Reserved.
+
+            
+            &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+            <span class="white-color">5.1k</span>
+            
+
+            <br>
+            <span id="sitetime"></span>
+
+            
+            
+
+        </div>
+        <div class="col s12 m4 l4 social-link ">
+    <a href="https://github.com/zhangyongbo" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:china.zhangyongbo@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="https://user.qzone.qq.com/785419852" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="weixin://contacts/profile/zybforwx" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+        <i class="fa fa-wechat"></i>
+    </a>
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv")!=null&&document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据
+                clearInterval(int);
+            }
+        }
+    });
+</script>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2015, 12, 04, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+
+</body>
+</html>

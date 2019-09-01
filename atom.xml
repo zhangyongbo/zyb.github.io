@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Z先生的乱语</title>
+  
+  <subtitle>一个码农的胡言乱语……</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhangyongbo.github.io/"/>
+  <updated>2019-09-01T03:25:24.899Z</updated>
+  <id>https://zhangyongbo.github.io/</id>
+  
+  <author>
+    <name>Z先生</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java检查收取邮件</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/java-jian-cha-shou-qu-you-jian/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/java-jian-cha-shou-qu-you-jian/</id>
+    <published>2019-08-31T08:17:52.000Z</published>
+    <updated>2019-09-01T03:25:24.899Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; org&lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="JMail" scheme="https://zhangyongbo.github.io/tags/JMail/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>activiti ie下保存模型问题</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/activiti-ie-xia-bao-cun-mo-xing-wen-ti/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/activiti-ie-xia-bao-cun-mo-xing-wen-ti/</id>
+    <published>2019-08-31T08:15:13.000Z</published>
+    <updated>2019-09-01T03:25:32.245Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;错误：Enclosed Exception: 元素类型 “path” 必须后跟属性规范 “&amp;gt;” 或
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="Activiti" scheme="https://zhangyongbo.github.io/tags/Activiti/"/>
+    
+      <category term="转" scheme="https://zhangyongbo.github.io/tags/%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA后台调用http接口</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/java-hou-tai-diao-yong-http-jie-kou/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/java-hou-tai-diao-yong-http-jie-kou/</id>
+    <published>2019-08-31T08:13:19.000Z</published>
+    <updated>2019-09-01T03:25:39.212Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; java&lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="Http" scheme="https://zhangyongbo.github.io/tags/Http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>activiti获取模型图片或部署图片</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-mo-xing-tu-pian-huo-bu-shu-tu-pian/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-mo-xing-tu-pian-huo-bu-shu-tu-pian/</id>
+    <published>2019-08-31T08:10:14.000Z</published>
+    <updated>2019-09-01T03:25:45.279Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;/**
+ * 获取流程图片base64码
+ *
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="Activiti" scheme="https://zhangyongbo.github.io/tags/Activiti/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>activiti获取流程跟踪图</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-liu-cheng-gen-zong-tu/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-liu-cheng-gen-zong-tu/</id>
+    <published>2019-08-31T06:18:53.000Z</published>
+    <updated>2019-09-01T03:25:51.507Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;/**
+ * 根据流程实例id，获取流程实时跟踪图片Base64码
+ *
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="Activiti" scheme="https://zhangyongbo.github.io/tags/Activiti/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>activiti流程跟踪图连接线文字不显示问题</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/activiti-liu-cheng-gen-zong-tu-lian-jie-xian-wen-zi-bu-xian-shi-wen-ti/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/activiti-liu-cheng-gen-zong-tu-lian-jie-xian-wen-zi-bu-xian-shi-wen-ti/</id>
+    <published>2019-08-31T06:17:27.000Z</published>
+    <updated>2019-09-01T03:25:58.018Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;需要反编译流程图片处理类，新建同包同名类，复制反编译内容，添加连接线文字处理。&lt;br&gt;&lt;code&gt;activiti-image-generator-5.22.0.jar!/org/activiti/image/impl/DefaultProcessDiagramGenera
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://zhangyongbo.github.io/categories/Java/"/>
+    
+    
+      <category term="Activiti" scheme="https://zhangyongbo.github.io/tags/Activiti/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cron表达式生成器</title>
+    <link href="https://zhangyongbo.github.io/2019/08/31/cron-biao-da-shi-sheng-cheng-qi/"/>
+    <id>https://zhangyongbo.github.io/2019/08/31/cron-biao-da-shi-sheng-cheng-qi/</id>
+    <published>2019-08-31T05:05:07.000Z</published>
+    <updated>2019-08-31T06:08:36.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本功能取自&lt;code&gt;http://cron.qqe2.com&lt;/code&gt;网站在线生成功能。因需要纯前端功能，所以去除了后台加载的&lt;strong&gt;最近5次运行时间&lt;/strong&gt;&lt;br&gt;。同时添加了cron表达式的校验功能，判断表达式的有效性。&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="Web" scheme="https://zhangyongbo.github.io/categories/Web/"/>
+    
+    
+      <category term="Cron" scheme="https://zhangyongbo.github.io/tags/Cron/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关闭Mac OS系统程序崩溃报告</title>
+    <link href="https://zhangyongbo.github.io/2019/08/28/guan-bi-mac-os-xi-tong-cheng-xu-beng-kui-bao-gao/"/>
+    <id>https://zhangyongbo.github.io/2019/08/28/guan-bi-mac-os-xi-tong-cheng-xu-beng-kui-bao-gao/</id>
+    <published>2019-08-28T08:51:26.000Z</published>
+    <updated>2019-08-31T03:41:21.585Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;关闭崩溃报告显示&quot;&gt;&lt;a href=&quot;#关闭崩溃报告显示&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Other" scheme="https://zhangyongbo.github.io/categories/Other/"/>
+    
+    
+      <category term="Mac" scheme="https://zhangyongbo.github.io/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高效用Google</title>
+    <link href="https://zhangyongbo.github.io/2019/08/28/gao-xiao-yong-google/"/>
+    <id>https://zhangyongbo.github.io/2019/08/28/gao-xiao-yong-google/</id>
+    <published>2019-08-28T07:13:07.000Z</published>
+    <updated>2019-08-31T09:12:54.834Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;如果票选近二十年最伟大的发明，我相信搜索引擎肯定会占据一个不容小觑的位置，它不单是一项发明，更是一项成就，最大程度消灭了信息的不平等。既然人人都可以接触到海量的信息，那么衡量信息财富多寡就只剩下技巧这惟一的标准了：&lt;strong&gt;善用搜索引擎的都是信息时代的富翁，不懂搜索引
+        
+      
+    
+    </summary>
+    
+      <category term="Other" scheme="https://zhangyongbo.github.io/categories/Other/"/>
+    
+    
+      <category term="转" scheme="https://zhangyongbo.github.io/tags/%E8%BD%AC/"/>
+    
+      <category term="google" scheme="https://zhangyongbo.github.io/tags/google/"/>
+    
+  </entry>
+  
+</feed>
