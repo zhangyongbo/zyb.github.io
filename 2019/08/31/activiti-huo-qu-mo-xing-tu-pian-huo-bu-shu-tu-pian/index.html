@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="activiti获取模型图片或部署图片, zhangyongbo Z先生 JAVA CMS">
-    <meta name="baidu-site-verification" content>
-    <meta name="google-site-verification" content>
+    <meta name="baidu-site-verification" content="" />
+    <meta name="google-site-verification" content="" />
     <meta name="description" content="/**
  * 获取流程图片base64码
  * 已添加“data:image/png;base64,”
@@ -20,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google-site-verification" content="C7uZSxfsIf1fAm-_QqaoWPHA8xA7KDgzyFrp0ZqE-04">
+    <meta name="google-site-verification" content="C7uZSxfsIf1fAm-_QqaoWPHA8xA7KDgzyFrp0ZqE-04" />
     <title>activiti获取模型图片或部署图片 | Z先生的乱语</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
@@ -46,6 +46,7 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+<meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="Z先生的乱语" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 <body>
@@ -436,7 +437,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    139
+                    159
                 </div>
                 
 
@@ -463,28 +464,28 @@
  * @return 图片base64码
  */</span>
 <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/imageBase64"</span><span class="token punctuation">)</span>
-<span class="token keyword">public</span> String <span class="token function">imageBase64</span><span class="token punctuation">(</span>String deploymentId<span class="token punctuation">,</span> String type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> String <span class="token function">imageBase64</span><span class="token punctuation">(</span>String deploymentId<span class="token punctuation">,</span> String type<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     String image <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"deploy"</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"deploy"</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 从仓库中找需要展示的文件</span>
         List<span class="token operator">&lt;</span>String<span class="token operator">></span> names <span class="token operator">=</span> repositoryService<span class="token punctuation">.</span><span class="token function">getDeploymentResourceNames</span><span class="token punctuation">(</span>deploymentId<span class="token punctuation">)</span><span class="token punctuation">;</span>
         String imageName <span class="token operator">=</span> null<span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span>String name <span class="token operator">:</span> names<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">".png"</span><span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>String name <span class="token operator">:</span> names<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">".png"</span><span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 imageName <span class="token operator">=</span> name<span class="token punctuation">;</span>
                 <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 通过部署ID和文件名称得到文件的输入流</span>
         InputStream in <span class="token operator">=</span> repositoryService<span class="token punctuation">.</span><span class="token function">getResourceAsStream</span><span class="token punctuation">(</span>deploymentId<span class="token punctuation">,</span> imageName<span class="token punctuation">)</span><span class="token punctuation">;</span>
         image <span class="token operator">=</span> Base64Convert<span class="token punctuation">.</span><span class="token function">getBase64FromInputStream</span><span class="token punctuation">(</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"model"</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"model"</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">//模型模块</span>
         <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bytes <span class="token operator">=</span> repositoryService<span class="token punctuation">.</span><span class="token function">getModelEditorSourceExtra</span><span class="token punctuation">(</span>deploymentId<span class="token punctuation">)</span><span class="token punctuation">;</span>
         image <span class="token operator">=</span> Base64<span class="token punctuation">.</span><span class="token function">encodeBase64String</span><span class="token punctuation">(</span>bytes<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token string">"data:image/png;base64,"</span> <span class="token operator">+</span> image<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
 </code></pre>
 
@@ -512,7 +513,7 @@
         </p>
         
             <div class="center-align">
-                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                     <img alt=""
                          style="border-width:0"
                          src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
@@ -527,7 +528,7 @@
                rel="cc:attributionURL">
                 Z先生
             </a> 采用
-            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
             </a>进行许可。
         
@@ -830,7 +831,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.1k</span>
+            <span class="white-color">6.9k</span>
             
 
             <br>

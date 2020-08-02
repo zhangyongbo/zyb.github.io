@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhangyongbo.github.io/2020/08/02/js-shi-jian-chu-li-gong-ju/</loc>
+    <lastmod>2020-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://zhangyongbo.github.io/2019/08/31/java-jian-cha-shou-qu-you-jian/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/activiti-liu-cheng-gen-zong-tu-lian-jie-xian-wen-zi-bu-xian-shi-wen-ti/</loc>
     <lastmod>2019-09-01</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-liu-cheng-gen-zong-tu/</loc>
     <lastmod>2019-09-01</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/activiti-huo-qu-mo-xing-tu-pian-huo-bu-shu-tu-pian/</loc>
     <lastmod>2019-09-01</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/java-hou-tai-diao-yong-http-jie-kou/</loc>
     <lastmod>2019-09-01</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/activiti-ie-xia-bao-cun-mo-xing-wen-ti/</loc>
     <lastmod>2019-09-01</lastmod>
-  </url>  <url>
-    <loc>https://zhangyongbo.github.io/2019/08/31/java-jian-cha-shou-qu-you-jian/</loc>
-    <lastmod>2019-09-01</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/28/gao-xiao-yong-google/</loc>
     <lastmod>2019-08-31</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/31/cron-biao-da-shi-sheng-cheng-qi/</loc>
     <lastmod>2019-08-31</lastmod>
-  </url>  <url>
+  </url>
+  <url>
     <loc>https://zhangyongbo.github.io/2019/08/28/guan-bi-mac-os-xi-tong-cheng-xu-beng-kui-bao-gao/</loc>
     <lastmod>2019-08-31</lastmod>
   </url>
-</urlset>
+</urlset> 
